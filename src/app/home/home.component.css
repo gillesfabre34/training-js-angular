@@ -1,0 +1,26 @@
+.blocs {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.blocs > div {
+  margin: auto;
+  text-align: center;
+}
+
+.form-div {
+  flex: 1;
+  background-color: #54a1e5;
+}
+.details-div {
+  flex: 2;
+  background-color: aquamarine;
+  text-align: center;
+}
+.list-div {
+  flex: 1;
+  background-color: bisque;
+  height: 100%;
+}
+

@@ -1,0 +1,15 @@
+
+<div class="form-div">
+  <p>Cats form</p>
+  <form [formGroup]="catsForm">
+<!--    <label for="catName">Name</label>-->
+<!--    <input type="text" #catName id="catName" formControlName="catName">-->
+    <label for="pass">Password</label>
+    <input type="text" #pass id="pass" formControlName="pass">
+    <p *ngIf="wrongPass">Wrong pass</p>
+    <label for="pass2">Again password</label>
+    <input type="text" #pass2 id="pass2" formControlName="pass2">
+    <div style="margin-top: 300px"></div>
+    <button type="button" (click)="onSubmit()" [disabled]="!catsForm.valid">Submit</button>
+  </form>
+</div>

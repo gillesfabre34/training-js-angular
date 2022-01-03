@@ -1,0 +1,16 @@
+<div class="main">
+  <h1 #title>Cats app</h1>
+  <button (click)="onClick()">Toggle Details Component</button>
+  <div class="blocs">
+    <div class="form-div">
+      <app-form (submitEvent)="formSubmitted($event)"></app-form>
+    </div>
+    <div class="list-div">
+      <app-list [refresh]="refresh"></app-list>
+    </div>
+    <div class="details-div">
+      <app-details zzz [cat]="currentCat"></app-details>
+    </div>
+  </div>
+  <p>AAAA</p>
+</div>
