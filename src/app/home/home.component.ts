@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.catService.getAll().subscribe();
-  }
+   }
 
   ngAfterViewInit() {
     console.log('AFTER VW INITTTT');
